@@ -11,12 +11,12 @@ import { useGLTF, useAnimations } from "@react-three/drei";
 import { useFrame, useThree } from '@react-three/fiber'
 import { a } from '@react-spring/three'
 
-import islandScene from '../assets/3d/stylized_planet.glb';
+import planetScene from '../assets/3d/stylized_planet.glb';
 
-const Island = (props) => {
+const Planet = (props) => {
   const planetRef = useRef();
   const group = useRef();
-  const { nodes, materials, animations } = useGLTF("/stylized_planet.glb");
+  const { nodes, materials, animations } = useGLTF(planetScene);
   const { actions } = useAnimations(animations, group);
   return (
     <a.group ref={planetRef} {...props}>
@@ -50,4 +50,4 @@ const Island = (props) => {
   );
 }
 
-export default Island;
+export default Planet;
