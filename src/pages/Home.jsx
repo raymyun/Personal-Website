@@ -3,8 +3,26 @@ import { Canvas } from '@react-three/fiber'
 import Loader from '../components/Loader'
 
 import Planet from '../models/Planet';
+import Sky from '../models/Sky';
 
 const Home = () => {
+  const adjustPlanetForScreenSize = () => {
+    let screenScale = null;
+    let screenPosition = [0, -6.5, -43];
+    let rotation = [0.1, 4.7, 0];
+
+    if (window.innerWidth < 768) {
+      screenScale = [1, 0.9, 0.9];
+    }
+    else {
+      screenScale = [20, 20, 20];
+    }
+
+    return [screenScale, screenPosition, rotation]
+  }
+
+  const [planetScale, planetPosition, planetRotation] = adjustPlanetForScreenSize();
+
   return (
     <section className="w-full h-screen relative">
       {/* <div className="absolute top-28 left-0 right-0 z-10 flex items-center justify-center">
@@ -15,13 +33,19 @@ const Home = () => {
         camera={{ near: 0.1, far: 1000 }}
       >
         <Suspense fallback={<Loader />}>
-          <directionalLight />
-          <ambientLight />
-          <pointLight />
-          <spotLight />
-          <hemisphereLight />
+          <directionalLight position = {[1, -5, -43]} intensity = {2} />
+          <ambientLight intensity = {1} />
+          <hemisphereLight skyColor="#b1e1ff" groundColor="#000000" intensity={2} />
 
-          <Planet />
+          <Sky 
+          
+          />
+
+          <Planet 
+            position = {planetPosition}
+            scale = {planetScale}
+            rotation = {planetRotation}
+          />
         </Suspense>
       </Canvas>
     </section>
