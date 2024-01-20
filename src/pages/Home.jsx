@@ -6,6 +6,7 @@ import Planet from '../models/Planet';
 import Sky from '../models/Sky';
 import Satellite from '../models/Satellite';
 import Spaceship from '../models/Spaceship';
+import Meteor from '../models/Meteor';
 
 const Home = () => {
   const [isRotating, setIsRotating] = useState(false);
@@ -60,6 +61,8 @@ const Home = () => {
           <hemisphereLight skyColor="#b1e1ff" groundColor="#000000" intensity={2} />
 
           <Satellite />
+
+          <Meteor />
 
           <Sky isRotating={isRotating} />
 
