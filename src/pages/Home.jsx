@@ -43,7 +43,7 @@ const Home = () => {
   }
 
   const [planetScale, planetPosition, planetRotation] = adjustPlanetForScreenSize();
-  const [spaceshipScale, spaceshipPosition] = adjustSpaceshipForScreenSize();
+  //const [spaceshipScale, spaceshipPosition] = adjustSpaceshipForScreenSize();
 
   return (
     <section className="w-full h-screen relative">
@@ -73,10 +73,10 @@ const Home = () => {
           />
 
           <Spaceship 
-            isRotating = {isRotating}
-            spaceshipScale = {spaceshipScale}
-            spaceshipPosition = {spaceshipPosition}
-            rotation = {[0, 20, 0]}
+            // isRotating = {isRotating}
+            // spaceshipScale = {spaceshipScale}
+            // spaceshipPosition = {spaceshipPosition}
+            // rotation = {[0, 20, 0]}
           />
 
         </Suspense>
