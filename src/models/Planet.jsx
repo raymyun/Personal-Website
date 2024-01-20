@@ -13,7 +13,7 @@ import { a } from '@react-spring/three'
 
 import planetScene from '../assets/3d/stylized_planet.glb';
 
-const Planet = ({ isRotating, setIsRotating, ...props}) => {
+const Planet = ({ isRotating, setIsRotating, setCurrentStage, ...props}) => {
   const planetRef = useRef();
 
   const { gl, viewport } = useThree();
@@ -81,6 +81,8 @@ const Planet = ({ isRotating, setIsRotating, ...props}) => {
       if (Math.abs(rotationSpeed.current) < 0.001) {
         rotationSpeed.current = 0;
       }
+
+      planetRef.current.rotation.y += rotationSpeed.current;
     }
     else {
       const rotation = planetRef.current.rotation.y;

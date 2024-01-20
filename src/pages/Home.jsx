@@ -9,6 +9,7 @@ import Spaceship from '../models/Spaceship';
 
 const Home = () => {
   const [isRotating, setIsRotating] = useState(false);
+  const [currentStage, setCurrentStage] = useState(1);
 
   const adjustPlanetForScreenSize = () => {
     let screenScale = null;
@@ -34,7 +35,7 @@ const Home = () => {
       screenPosition = [0, -1.5, 0];
     }
     else {
-      screenScale = [1, 1, 1];
+      screenScale = [3, 3, 3];
       screenPosition = [0, -4, -4];
     }
 
@@ -60,7 +61,7 @@ const Home = () => {
 
           <Satellite />
 
-          <Sky />
+          <Sky isRotating={isRotating} />
 
           <Planet 
             position = {planetPosition}
@@ -68,13 +69,14 @@ const Home = () => {
             rotation = {planetRotation}
             isRotating={isRotating}
             setIsRotating={setIsRotating}
+            setCurrentStage={setCurrentStage}
           />
 
           <Spaceship 
             isRotating = {isRotating}
             spaceshipScale = {spaceshipScale}
             spaceshipPosition = {spaceshipPosition}
-            rotation = {[0, 50, 0]}
+            rotation = {[0, 20, 0]}
           />
 
         </Suspense>
