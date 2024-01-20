@@ -22,10 +22,27 @@ const Home = () => {
       screenScale = [20, 20, 20];
     }
 
-    return [screenScale, screenPosition, rotation]
+    return [screenScale, screenPosition, rotation];
+  }
+
+  const adjustSpaceshipForScreenSize = () => {
+    let screenScale = null;
+    let screenPosition;
+
+    if (window.innerWidth < 768) {
+      screenScale = [0.001, 0.001, 0.001];
+      screenPosition = [0, -1.5, 0];
+    }
+    else {
+      screenScale = [1, 1, 1];
+      screenPosition = [0, -4, -4];
+    }
+
+    return [screenScale, screenPosition];
   }
 
   const [planetScale, planetPosition, planetRotation] = adjustPlanetForScreenSize();
+  const [spaceshipScale, spaceshipPosition] = adjustSpaceshipForScreenSize();
 
   return (
     <section className="w-full h-screen relative">
@@ -53,7 +70,12 @@ const Home = () => {
             setIsRotating={setIsRotating}
           />
 
-          <Spaceship />
+          <Spaceship 
+            isRotating = {isRotating}
+            spaceshipScale = {spaceshipScale}
+            spaceshipPosition = {spaceshipPosition}
+            rotation = {[0, 50, 0]}
+          />
 
         </Suspense>
       </Canvas>
