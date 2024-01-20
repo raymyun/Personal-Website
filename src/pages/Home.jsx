@@ -1,4 +1,4 @@
-import { Suspense } from 'react'
+import { useState, Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
 import Loader from '../components/Loader'
 
@@ -8,6 +8,8 @@ import Satellite from '../models/Satellite';
 import Spaceship from '../models/Spaceship';
 
 const Home = () => {
+  const [isRotating, setIsRotating] = useState(false);
+
   const adjustPlanetForScreenSize = () => {
     let screenScale = null;
     let screenPosition = [0, -6.5, -43];
@@ -31,7 +33,7 @@ const Home = () => {
         POPUP
       </div> */}
       <Canvas 
-        className="w-full h-screen bg-transparent"
+        className={`w-full h-screen bg-transparent ${isRotating ? 'cursor-grabbing' : 'cursor-grab'}`}
         camera={{ near: 0.1, far: 1000 }}
       >
         <Suspense fallback={<Loader />}>
@@ -47,6 +49,8 @@ const Home = () => {
             position = {planetPosition}
             scale = {planetScale}
             rotation = {planetRotation}
+            isRotating={isRotating}
+            setIsRotating={setIsRotating}
           />
 
           <Spaceship />
