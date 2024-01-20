@@ -4,6 +4,8 @@ import Loader from '../components/Loader'
 
 import Planet from '../models/Planet';
 import Sky from '../models/Sky';
+import Satellite from '../models/Satellite';
+import Spaceship from '../models/Spaceship';
 
 const Home = () => {
   const adjustPlanetForScreenSize = () => {
@@ -37,15 +39,18 @@ const Home = () => {
           <ambientLight intensity = {1} />
           <hemisphereLight skyColor="#b1e1ff" groundColor="#000000" intensity={2} />
 
-          <Sky 
-          
-          />
+          <Satellite />
+
+          <Sky />
 
           <Planet 
             position = {planetPosition}
             scale = {planetScale}
             rotation = {planetRotation}
           />
+
+          <Spaceship />
+
         </Suspense>
       </Canvas>
     </section>
