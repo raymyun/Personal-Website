@@ -2,7 +2,9 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div>About</div>
+    <section className="relative flex lg:flex-row flex-col max-container">
+
+    </section>
   )
 }
 
