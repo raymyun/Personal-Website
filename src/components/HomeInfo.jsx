@@ -9,7 +9,7 @@ const InfoBox = ({ text, link, btnText }) => (
         <p className="font-medium sm:text-xl text-center">{text}</p>
         <Link to={link} className="neo-brutalism-white neo-btn">
             {btnText}
-            <img src={arrow} />
+            <img src={arrow} className="w-4 h-4 object-contain" />
         </Link>
     </div>
 )
@@ -24,16 +24,24 @@ const renderContent = {
     ),
     2: (
         <InfoBox 
-            text="Worked on several projects and picked up many skills along the way"
+            text="After graduating, I have been exploring many different facets of the tech universe to see what I enjoy most."
             link="/about"
-            btnText="Learn more"
+            btnText="More about me"
         />
     ),
     3: (
-        <h1>3</h1>
+        <InfoBox 
+            text="Worked on several projects and picked up many skills along the way."
+            link="/projects"
+            btnText="Visit my portfolio"
+        />
     ),
     4: (
-        <h1>4</h1>
+        <InfoBox 
+            text="Need a project done or looking for a dev? I'm just a few keystrokes away!"
+            link="/contact"
+            btnText="Let's talk"
+        />
     ),
 }
 
