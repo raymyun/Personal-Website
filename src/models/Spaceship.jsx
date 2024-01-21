@@ -10,15 +10,6 @@ const Spaceship = () => {
     const { scene, animations } = useGLTF(spaceshipScene);
     const { actions } = useAnimations(animations, ref);
 
-    // useEffect(() => {
-    //     if (isRotating) {
-    //         actions['Take 001'].play();
-    //     }
-    //     else {
-    //         actions['Take 001'].stop();
-    //     }
-    // }, [actions, isRotating])
-
     useFrame(({ clock, camera }) => {
         //Sourced code from ChatGPT to update Y position to simulate flight like the curves of a sin graph
         ref.current.position.y = Math.sin(clock.elapsedTime) * 3 -5
@@ -29,11 +20,6 @@ const Spaceship = () => {
             <primitive object = {scene} />
         </mesh>
     )
-    // return (
-    //     <mesh {...props} ref={ref}>
-    //         <primitive object = {scene} />
-    //     </mesh>
-    // )
 }
 
 export default Spaceship

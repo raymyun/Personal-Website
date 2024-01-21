@@ -77,12 +77,7 @@ const Home = () => {
             setCurrentStage={setCurrentStage}
           />
 
-          <Spaceship 
-            // isRotating = {isRotating}
-            // spaceshipScale = {spaceshipScale}
-            // spaceshipPosition = {spaceshipPosition}
-            // rotation = {[0, 20, 0]}
-          />
+          <Spaceship />
 
         </Suspense>
       </Canvas>

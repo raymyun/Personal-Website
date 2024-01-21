@@ -1,5 +1,8 @@
 import { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser';
+import { Canvas } from '@react-three/fiber';
+
+import Loader from '../components/Loader'
 
 const Contact = () => {
   const formRef = useRef(null);
@@ -106,7 +109,6 @@ const Contact = () => {
 
           </button>
         </form>
-
       </div>
     </section>
   )
