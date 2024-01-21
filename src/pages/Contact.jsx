@@ -1,4 +1,5 @@
 import { useRef, useState } from 'react'
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const formRef = useRef(null);
@@ -12,6 +13,32 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsLoading(true);
+
+    //EMAILJS FUNCTIONALITY UPON CLICKING SUBMIT BUTTON
+    emailjs.send(
+      import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+      {
+        from_name: form.name,
+        to_name: "Raymond",
+        from_email: form.email,
+        to_email: 'yangraymond2011@gmail.com',
+        message: form.message
+      },
+      import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+    ).then(() => {
+      //This is what happens after submit button has been clicked
+      setIsLoading(false);
+      // TODO: Show success message
+      // TODO: Hide alert
+
+      setForm({ name: '', email: '', message: '' });
+    }).catch((error) => {
+      //This is what happens if there was an error when submitting
+      setIsLoading(false);
+      console.log(error);
+      // TODO: Show error message
+    })
   };
 
   const handleFocus = () => {};
