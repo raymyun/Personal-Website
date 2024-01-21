@@ -1,10 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
+
 const InfoBox = ({ text, link, btnText }) => (
     <div className="info-box">
-        {text}
-        <Link to={link}>
+        <p className="font-medium sm:text-xl text-center">{text}</p>
+        <Link to={link} className="neo-brutalism-white neo-btn">
             {btnText}
         </Link>
     </div>
