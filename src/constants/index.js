@@ -16,7 +16,6 @@ import {
     nextjs,
     nodejs,
     pricewise,
-    // python,
     react,
     redux,
     sass,
@@ -26,6 +25,8 @@ import {
     threads,
     typescript
 } from "../assets/icons";
+
+import python from '../assets/icons/python.svg';
 
 export const skills = [
     {
@@ -58,11 +59,11 @@ export const skills = [
         name: "Node.js",
         type: "Backend",
     },
-    // {
-    //     imageUrl: python,
-    //     name: "Python",
-    //     type: "Backend",
-    // },
+    {
+        imageUrl: python,
+        name: "Python",
+        type: "Backend",
+    },
     {
         imageUrl: react,
         name: "React",
