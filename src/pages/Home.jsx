@@ -28,6 +28,7 @@ const Home = () => {
     return [screenScale, screenPosition, rotation];
   }
 
+  //Need to tinker with this a bit more
   const adjustSpaceshipForScreenSize = () => {
     let screenScale = null;
     let screenPosition;

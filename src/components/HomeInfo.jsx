@@ -20,6 +20,8 @@ const renderContent = {
         Hi, I am <span className="font-semibold">Raymond</span>👋🏼
         <br/>
         A Software Engineer based in Los Angeles.
+        <br />
+        <span className="font-semibold">Spin</span> the world!
         </h1>
     ),
     2: (
