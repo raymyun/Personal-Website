@@ -27,12 +27,18 @@ import {
 } from "../assets/icons";
 
 import python from '../assets/icons/python.svg';
+import cplusplus from '../assets/icons/cplusplus.svg'
 
 export const skills = [
     {
         imageUrl: css,
         name: "CSS",
         type: "Frontend",
+    },
+    {
+        imageUrl: cplusplus,
+        name: "CPlusPlus",
+        type: "Backend",
     },
     {
         imageUrl: git,
