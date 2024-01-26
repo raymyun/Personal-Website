@@ -183,7 +183,7 @@ export const projects = [
         iconUrl: snapgram,
         theme: 'btn-back-blue',
         name: 'Personal Website',
-        description: 'Using Javascript(React) and CSS, designed and built a personal website portfolio that is fully responsive.',
+        description: 'Using Javascript(React) and Tailwind CSS, designed and built a personal website portfolio that is fully responsive.',
         link: 'https://github.com/raymyun/Personal-Website',
     },
     {
