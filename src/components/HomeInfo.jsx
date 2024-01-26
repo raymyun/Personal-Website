@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { arrow } from '../assets/icons'
 
 
-
+//InfoBox function to make recurring Infoboxes easier to create
 const InfoBox = ({ text, link, btnText }) => (
     <div className="info-box">
         <p className="font-medium sm:text-xl text-center">{text}</p>

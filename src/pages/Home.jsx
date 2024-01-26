@@ -1,4 +1,4 @@
-import { useState, Suspense } from 'react'
+import { useState, Suspense, useEffect, useRef } from 'react'
 import { Canvas } from '@react-three/fiber'
 import Loader from '../components/Loader'
 
@@ -9,9 +9,29 @@ import Spaceship from '../models/Spaceship';
 import Meteor from '../models/Meteor';
 import HomeInfo from '../components/HomeInfo';
 
+import ambientspace from '../assets/ambientspace.mp3'
+import { soundoff, soundon } from '../assets/icons';
+
 const Home = () => {
+  //Initialize audio refs and states
+  const audioRef = useRef(new Audio(ambientspace));
+  audioRef.current.volume = 0.1;
+  audioRef.current.loop = true;
+  const [isPlayingMusic, setIsPlayingMusic] = useState(false);
+
+  //Initialize rotation of home screen states
   const [isRotating, setIsRotating] = useState(false);
   const [currentStage, setCurrentStage] = useState(1);
+
+  //Handle play/pause audio
+  useEffect(() => {
+    if (isPlayingMusic) {
+      audioRef.current.play();
+    }
+    return () => {
+      audioRef.current.pause();
+    }
+  }, [isPlayingMusic])
 
   const adjustPlanetForScreenSize = () => {
     let screenScale = null;
@@ -82,6 +102,15 @@ const Home = () => {
 
         </Suspense>
       </Canvas>
+
+      <div className="absolute bottom-2 left-2">
+        <img 
+          src={!isPlayingMusic ? soundoff : soundon}
+          alt="sound"
+          className="w-10 h-10 cursor-pointer object-contain"
+          onClick={() => setIsPlayingMusic(!isPlayingMusic)}
+        />
+      </div>
     </section>
   )
 }
