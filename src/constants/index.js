@@ -175,45 +175,31 @@ export const socialLinks = [
 
 export const projects = [
     {
-        iconUrl: pricewise,
+        iconUrl: summiz,
         theme: 'btn-back-red',
         name: 'Library System',
-        description: 'Developed a virtual library system.',
-        link: '',
+        description: 'Developed a virtual library system with 2 other developers.',
+        link: 'https://github.com/raymyun/Library-System',
     },
     {
         iconUrl: threads,
         theme: 'btn-back-green',
         name: 'Web Scraper',
-        description: 'Created a Python web scraper.',
-        link: '',
+        description: '[Incomplete] Created a Python web scraper.',
+        link: 'https://github.com/raymyun/Web-Scraper',
     },
     {
-        iconUrl: car,
+        iconUrl: snapgram,
         theme: 'btn-back-blue',
         name: 'Personal Website',
         description: 'Designed and built a personal website portfolio that is fully responsive.',
-        link: '',
+        link: 'https://github.com/raymyun/Personal-Website',
     },
-    // {
-    //     iconUrl: snapgram,
-    //     theme: 'btn-back-pink',
-    //     name: 'Full Stack Instagram Clone',
-    //     description: 'Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.',
-    //     link: 'https://github.com/adrianhajdin/social_media_app',
-    // },
-    // {
-    //     iconUrl: estate,
-    //     theme: 'btn-back-black',
-    //     name: 'Real-Estate Application',
-    //     description: 'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
-    //     link: 'https://github.com/adrianhajdin/projects_realestate',
-    // },
-    // {
-    //     iconUrl: summiz,
-    //     theme: 'btn-back-yellow',
-    //     name: 'AI Summarizer Application',
-    //     description: 'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
-    //     link: 'https://github.com/adrianhajdin/project_ai_summarizer',
-    // }
+    {
+        iconUrl: estate,
+        theme: 'btn-back-black',
+        name: 'LeetCode Collection',
+        description: 'A collection of my solutions to LeetCode problems.',
+        link: 'https://github.com/raymyun/LeetCode-Problems',
+    },
 ];
