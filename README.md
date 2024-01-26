@@ -23,6 +23,7 @@ Follow/Click the [http://localhost:5173/](http://localhost:5173/) link to open t
 
 
 ### TODO:
+- (Urgent) Display resume at bottom of About Page
 - (Urgent) Add links to my socials
 - (Urgent) Audio is too quiet, need to test what volume is appropriate
 - (Urgent) C++ and Python Icons need transparent backgrounds
