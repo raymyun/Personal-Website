@@ -17,7 +17,7 @@ const Home = () => {
   const audioRef = useRef(new Audio(ambientspace));
   audioRef.current.volume = 0.1;
   audioRef.current.loop = true;
-  const [isPlayingMusic, setIsPlayingMusic] = useState(true);
+  const [isPlayingMusic, setIsPlayingMusic] = useState(false);
 
   //Initialize rotation of home screen states
   const [isRotating, setIsRotating] = useState(false);
