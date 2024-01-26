@@ -23,6 +23,7 @@ Follow/Click the [http://localhost:5173/](http://localhost:5173/) link to open t
 
 
 ### TODO:
+- (Maybe) Change favicon to something custom-made for me
 - Mobile Device Optimization
 - Dark and Light Mode Button
 - Polish Color Scheme
