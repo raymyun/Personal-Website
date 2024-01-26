@@ -20,3 +20,9 @@ $ npm run dev
 ```
 
 Follow/Click the [http://localhost:5173/](http://localhost:5173/) link to open the application in your local browser.
+
+
+### TODO:
+- Mobile Device Optimization
+- Dark and Light Mode Button
+- Polish Color Scheme
