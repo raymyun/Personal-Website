@@ -14,6 +14,7 @@ Hi! Welcome to the source code for my personal portfolio website.
 
 ```
 $ git clone https://github.com/raymyun/Personal-Website.git
+$ cd personal_website
 $ npm install
 $ npm run dev
 ```
