@@ -124,10 +124,17 @@ export const skills = [
 ];
 
 export const experiences = [
+    /*
+    Icon background colors:
+    #accbe1
+    #fbc3bc
+    #b7e4c7
+    #a2d2ff
+    */
     {
         title: "Head Treasurer",
         company_name: "University of California, Riverside",
-        //icon: starbucks,
+        //icon: ,
         iconBg: "#accbe1",
         date: "July 2020 - January 2022",
         points: [

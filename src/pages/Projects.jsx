@@ -12,7 +12,7 @@ const Projects = () => {
         My <span className="blue-gradient_text font-semibold drop-shadow">Projects</span>
       </h1>
 
-      <div className="mt-5 flex flex-col gap-3 text-slate-500">
+      <div className="mt-5 flex flex-col gap-3 text-gray-400">
         <p>
           I've embarked on several different projects since graduating, 
           but I am always looking for interesting projects to further expand my skillset.
@@ -42,7 +42,7 @@ const Projects = () => {
               <h4 className="text-2xl font-poppins font-semibold">
                 {project.name}
               </h4>
-              <p className="mt-2 text-slate-500">
+              <p className="mt-2 text-gray-400">
                 {project.description}
               </p>
               <div className="mt-5 flex items-center gap-2 font-poppins">
@@ -50,7 +50,7 @@ const Projects = () => {
                   to={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-semibold text-blue-600"
+                  className="font-semibold text-blue-500"
                 >
                   Live Link
                 </Link>

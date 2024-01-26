@@ -11,7 +11,7 @@ const About = () => {
         Hi, I'm <span className="blue-gradient_text font-semibold drop-shadow">Raymond</span>
       </h1>
 
-      <div className="mt-5 flex flex-col gap-3 text-slate-500">
+      <div className="mt-5 flex flex-col gap-3 text-gray-400">
         <p>
           Aspiring Software Engineer based in Los Angeles, eager to explore the different facets of the tech universe. 
           Some of my main interests include software infrastructure, data science, fin tech, and developing web/mobile applications. 
@@ -42,7 +42,7 @@ const About = () => {
         <h3 className="subhead-text">
           Work Experience
         </h3>
-        <div className="mt-5 flex flex-col gap-3 text-slate-500">
+        <div className="mt-5 flex flex-col gap-3 text-gray-400">
           <p>
             I am always looking for opportunities to further expand my knowledge of software and am excited for what the future may bring.
           </p>
@@ -53,6 +53,7 @@ const About = () => {
               <VerticalTimelineElement 
               key={experience.company_name} 
               date={experience.date} 
+
               //This handles icons for work experience, I have no relevant work info at the moment
               // icon={<div className="flex justify-center items-center w-full h-full">
               //   <img
@@ -61,14 +62,16 @@ const About = () => {
               //     //className="w-[60%] h-[60%] object-contain"
               //   />
               // </div>}
+              
               //Below code styles icons: circle background color respective to color scheme of icon
               iconStyle={{ background: experience.iconBg }}
               //Below code styles the work experience content: underlying border with color respective to color scheme of icon
               contentStyle={{
                 borderBottom: '8px',
                 borderStyle: 'solid',
-                borderBottomColor: experience.iconBg,
-                boxShadow: 'none'
+                borderBottomColor: 'black',
+                boxShadow: 'none',
+                backgroundColor: experience.iconBg
               }}
               >
                 <div>
@@ -81,7 +84,7 @@ const About = () => {
                 </div>
                 <ul className="my-5 list-disc ml-5 space-y-2">
                   {experience.points.map((point, index) => (
-                    <li key={`experience-point-${index}`} className="text-black-500/50 font-normal pl-1 text-sm">
+                    <li key={`experience-point-${index}`} className="text-black-500 font-normal pl-1 text-sm">
                       {point}
                     </li>
                   ))}
