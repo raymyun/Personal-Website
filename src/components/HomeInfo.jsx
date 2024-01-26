@@ -21,7 +21,9 @@ const renderContent = {
         <br/>
         A Software Engineer based in Los Angeles.
         <br />
-        <span className="font-semibold text-blue-700">Spin</span> the world!
+        <span className="font-semibold text-red-700">Spin</span> the world!
+        <br />
+        Click <span className="font-semibold text-purple-700">Audio</span> (bottom left) for a more immersive experience.
         </h1>
     ),
     2: (
