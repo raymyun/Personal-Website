@@ -63,7 +63,7 @@ body:has(.card[data-color="green"]:hover) {
   }
 
   .info-box {
-    @apply mx-5 relative flex text-white flex-col gap-3 max-w-2xl neo-brutalism-blue pt-4 pb-12 px-8;
+    @apply mx-5 relative flex text-white flex-col gap-3 max-w-2xl neo-brutalism-gray pt-4 pb-12 px-8;
   }
 
   .neo-btn {
@@ -187,6 +187,6 @@ body:has(.card[data-color="green"]:hover) {
   position: relative;
   border-radius: 10px;
   border: #A9A9A9;
-  box-shadow: 0.6vmin 0.6vmin #808080, 1vmin 1vmin #808080, 1vmin 1vmin #808080,
-    0.65vmin 1vmin #808080, 1vmin 0.65vmin #808080;
+  box-shadow: 0.6vmin 0.6vmin #808080, 1vmin 1vmin #D3D3D3, 1vmin 1vmin #D3D3D3,
+    0.65vmin 1vmin #D3D3D3, 1vmin 0.65vmin #D3D3D3;
 }
