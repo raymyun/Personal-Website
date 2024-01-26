@@ -16,7 +16,7 @@ const InfoBox = ({ text, link, btnText }) => (
 
 const renderContent = {
     1: (
-        <h1 className="font-medium sm:text-xl sm:leading-snug text-center neo-brutalism-gray py-4 px-8 text-black mx-5">
+        <h1 className="font-medium sm:text-xl sm:leading-snug text-center neo-brutalism-gray opacity-90 py-4 px-8 text-black mx-5">
         Hi, I am <span className="font-semibold text-blue-700">Raymond</span>👋🏼
         <br/>
         A Software Engineer based in Los Angeles.

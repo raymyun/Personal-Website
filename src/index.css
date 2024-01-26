@@ -189,4 +189,5 @@ body:has(.card[data-color="green"]:hover) {
   border: #A9A9A9;
   box-shadow: 0.6vmin 0.6vmin #808080, 1vmin 1vmin #D3D3D3, 1vmin 1vmin #D3D3D3,
     0.65vmin 1vmin #D3D3D3, 1vmin 0.65vmin #D3D3D3;
+    opacity: 0.9
 }
