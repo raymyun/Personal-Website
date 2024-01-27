@@ -31,4 +31,5 @@ Follow/Click the [http://localhost:5173/](http://localhost:5173/) link to open t
 - Mobile Device Optimization
 - Dark and Light Mode Button
 - Polish Color Scheme
+- Fix astronaut animation (when changing direction)
 - (Maybe) Change favicon to something custom-made for me or a globe
