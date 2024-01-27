@@ -15,7 +15,7 @@ import { soundoff, soundon } from '../assets/icons';
 const Home = () => {
   //Initialize audio refs and states
   const audioRef = useRef(new Audio(ambientspace));
-  audioRef.current.volume = 0.1;
+  audioRef.current.volume = 0.2;
   audioRef.current.loop = true;
   const [isPlayingMusic, setIsPlayingMusic] = useState(false);
 
