@@ -26,7 +26,7 @@ Follow/Click the [http://localhost:5173/](http://localhost:5173/) link to open t
 - (Urgent) Work Experience Timeline Dates are not very visible with color scheme
 - (Urgent) Display resume at bottom of About Page
 - (Urgent) Add links to my socials
-- (Urgent) Audio is too quiet, need to test what volume is appropriate
+- (Done, just need to run build) Audio is too quiet, need to test what volume is appropriate
 - (Urgent) C++ and Python Icons need transparent backgrounds
 - Mobile Device Optimization
 - Dark and Light Mode Button
