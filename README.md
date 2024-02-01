@@ -23,6 +23,7 @@ Follow/Click the [http://localhost:5173/](http://localhost:5173/) link to open t
 
 
 ### TODO:
+- (Urgent) Update skills with recent skills from MERN project
 - (Urgent) Work Experience Timeline Dates are not very visible with color scheme
 - (Urgent) Display resume at bottom of About Page
 - (Urgent) Add links to my socials
