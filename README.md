@@ -8,6 +8,7 @@ Hi! Welcome to the source code for my personal portfolio website.
 - [React Router Dom](https://www.npmjs.com/package/react-router-dom): A React Javascript library that facilitated the routing of webpages.
 - [Three.js](https://threejs.org/): A JavaScript 3D library that allowed the implementation of 3D animations/graphics/models.
 - [React Three Fiber](https://www.npmjs.com/package/@react-three/fiber): A React renderer for Threejs that made the implementation of 3d animations/graphics/models easier.
+- [Vite]
 ```
 
 ### Build
